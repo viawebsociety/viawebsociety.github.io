@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VIA Web Society</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/default.css" id="theme">
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if (window.location.search.match(/print-pdf/gi)) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/print/pdf.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
+  </script>
+  <style>
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+      margin-top: 20px;
+    }
+    p {
+      margin-top:20px !important;
+    }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section data-background="#428bca">
+      <h1>VIA Web Society</h1>
+      <h2>Meeting #:</h2>
+    </section>
+    <section data-background="#428bca">
+      <h2>Meeting Schedule:</h2>
+      <ul>
+        <li></li>
+      </ul>
+    </section>
+    <section data-background="#428bca">
+      <h3>Homework!</h3>
+      <ol>
+        <li></li>
+      </ol>
+    </section>
+    <section>
+      <h2>Thank you for coming!</h2>
+      <img src="images/thatsall.gif" alt="Looney Toons that's all folks animation"/>
+    </section>
+  </div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+      {
+        src: 'lib/js/classList.js',
+        condition: function () {
+          return !document.body.classList;
+        }
+      },
+      {
+        src: 'plugin/markdown/marked.js',
+        condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      },
+      {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      },
+      {
+        src: 'plugin/zoom-js/zoom.js',
+        async: true,
+        condition: function () {
+          return !!document.body.classList;
+        }
+      },
+      {
+        src: 'plugin/notes/notes.js',
+        async: true,
+        condition: function () {
+          return !!document.body.classList;
+        }
+      }
+    ]
+  });
+</script>
+</body>
+</html>
+
