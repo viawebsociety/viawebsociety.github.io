@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Skarmdev</title>
-	<link rel="stylesheet" href="">
-</head>
-<body>
-	<div>
-		<a href="https://github.com/skarmdev">Link to my personnal GitHub</a>
-	</div>
-</body>
+<html ng-app="indexApp">
+	<head>
+		  <meta charset='utf-8'>
+		  <link rel="stylesheet" type="text/css" href="../../styles/site.css">
+		  <title>VIA Web Society</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>
+					<a href="http://viawebsociety.github.io">Via Web Society</a>
+				</h1>
+				<section class="downloads">
+					<a href="https://github.com/viawebsociety" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+				</section>
+			</div>
+		</header>
+		<div class="container">
+			<section class="main_content">
+				<h2>Skarmdev page</h2>
+				<p> Hey ! I am Thomas ! I am an ICT Engineering student and I like web technologies.</p>
+
+				<p>I know to do lot of shits in Java and C. But I am moving on Web stuff now. (NodeJS especially)</p>
+				<div ng-controller="IndexController">
+					<ul>
+						<li ng-repeat="language in languages">
+							{{language.name}}
+						</li>
+					</ul>
+				</div>
+				<p>I am learning a lot about cool javascript frameworks and want to share that knowlegde. So I might doing some presentations in the future.</p>
+			</section>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+			<script type="text/javascript" src="./app.js"></script>
+		</div>
+	</body>
 </html>
